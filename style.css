@@ -1,0 +1,134 @@
+body, html {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background: url("./assets/img/bg_ombak_cute.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background-image: url(./assets/img/headerbg.jpg);
+    background-size: cover;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    color: rgb(211, 62, 112);
+    -webkit-text-stroke: 0.5px rgb(90, 16, 65);
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.text-td {
+    color: rgb(185, 64, 104); 
+    font-weight: 1000;
+    -webkit-text-stroke: 0.3px rgb(114, 47, 84);
+}
+
+input {
+    width: auto;
+    height: 20px;
+    font-size: 16px;
+    color: rgb(107, 0, 41);
+    background-color: pink;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1.5px solid aliceblue;
+    padding: 5px 10px;
+    outline: none; 
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+input:focus {
+    box-shadow: 0 0 5px 2px rgba(247, 132, 189, 0.5); /* Efek glow pink */
+    border-color: hotpink; 
+}
+
+.btn {
+    margin-left: 5px;
+    width: auto;
+    height: 28px;
+    background-color: palevioletred;
+    border: none;
+    border-radius: 5px;
+    padding: auto;
+}
+
+.list-item {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.list-item-detail {
+    display: flex;
+    align-items: center;
+}
+
+.list-item-detail input {
+    margin-right: 16px;
+    width: 20px;
+    height: 20px;
+}
+
+.list-item-detail span {
+    font-size: 17px;
+    color: rgb(192, 43, 93);
+    font-weight: bolder;
+}
+
+.list-item-detail input:checked ~ span {
+    text-decoration: line-through;
+    color: rgb(192, 43, 93);
+}
+
+.td-list {
+    padding: 1rem;
+}
+
+.ck-input {
+    accent-color: palevioletred;
+}
+
+.delete-button {
+    font-size: 10px;
+    margin: 10px 10px;
+    width: 20px;
+    height: 20px;
+    background-color: palevioletred;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive layout HP */
+@media (min-width: 600px) {
+    /* .container {
+        max-width: 600px;
+        margin: 0 auto;
+    } */
+    .td-list {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+}
+
+/* .container {
+    padding: 1rem;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+} */
