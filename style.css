@@ -63,7 +63,7 @@ input:focus {
 
 .list-item {
     display: flex;
-    width: 400px;
+    width: 310px;
     justify-content: space-between;
     padding: 5px 0;
 }
