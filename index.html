@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>To-do List</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     </head>
     <body>
         <nav>
@@ -13,16 +14,12 @@
             </header>
         </nav>
         <section class="td-list">
-            <h1 class="text-td">To-do List</h1>
-            <form onsubmit="onFormSubmit(event)">
-                <input type="text">
-            <button class="btn" type="submit">Submit</button>
-            </form>
-
-            <div class="note">
-                 <form action="">
+            <div class="td-list-input">
+                <h1 class="text-td">To-do List</h1>
+                <form onsubmit="onFormSubmit(event)">
                     <input type="text">
-                 </form>
+                <button class="btn" type="submit">Submit</button>
+                </form>
             </div>
         <section id="list"></section>
         <script src="main.js"></script>

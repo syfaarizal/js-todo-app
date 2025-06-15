@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body, html {
     font-family: sans-serif;
     margin: 0;
@@ -9,6 +13,7 @@ body, html {
     background-size: cover;
     width: 100%;
     height: 100%;
+    overflow: hidden;
     scroll-behavior: smooth;
 }
 
@@ -36,7 +41,7 @@ header h1 {
 
 input {
     width: auto;
-    height: 20px;
+    height: 30px;
     font-size: 16px;
     color: rgb(107, 0, 41);
     background-color: pink;
@@ -93,6 +98,15 @@ input:focus {
     color: rgb(192, 43, 93);
 }
 
+.list-text {
+  display: inline-block;
+  max-width: 240px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+
 .td-list {
     padding: 1rem;
 }
@@ -113,10 +127,6 @@ input:focus {
     cursor: pointer;
 }
 
-#note {
-    display: flex;
-}
-
 .box-nt {
     padding: 1rem;
 }
@@ -126,36 +136,37 @@ input:focus {
     height: 200px;
 }
 
-@media (min-width: 1024px) {
-    header h1 {
-        padding-left: 50px;
-        display: flex;
-        text-align: left;
-    }
-
-    .list-item-detail {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: left;
-    }
-
-    .td-list {
-        padding-left: 70px;
-        margin: 0;
-        
-    }
-
-    input {
-        display: flex;
-        justify-content: space-between;
-    }
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-/* @media (min-width: 600px) {
+.button-group {
+  display: flex;
+  gap: 5px;
+}
+
+.edit-button, .delete-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: palevioletred;
+}
+
+@media (min-width: 600px) {
     .td-list {
         max-width: 600px;
-        /* margin: 0 auto; */
-    /* }
-} */ 
+        margin: 0 auto; 
+    }
+} 
