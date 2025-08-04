@@ -8,7 +8,7 @@ body, html {
     padding: 0;
     height: auto;
     overflow: auto;
-    background: url("./assets/img/bg_ombak_cute.jpg");
+    background: url("../img/bg_ombak_cute.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -18,7 +18,7 @@ body, html {
 }
 
 header {
-    background-image: url(./assets/img/headerbg.jpg);
+    background-image: url(../img/headerbg.jpg);
     background-size: cover;
     padding: 1rem;
     text-align: center;
